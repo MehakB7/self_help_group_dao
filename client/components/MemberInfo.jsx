@@ -13,7 +13,6 @@ const MemberInfo = ({ membersInfo }) => {
 
       <div>
         {(membersInfo || []).map((x) => {
-          console.log("x", x);
           return (
             <div className={styles.memberInfo} key={x.address}>
               {" "}
@@ -25,7 +24,7 @@ const MemberInfo = ({ membersInfo }) => {
               >
                 {x.address}:
               </a>{" "}
-              <span style={{}}>{parseToEther(x.balance)} ETH </span>
+              <span style={{}}>{parseToEther(x.balance)} SEP </span>
             </div>
           );
         })}
